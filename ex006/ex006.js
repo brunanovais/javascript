@@ -1,10 +1,19 @@
-function clicar() {
-    var area = window.document.getElementById ("acao")
-    area.innerText = "Clicou!"
-}
+var area = window.document.getElementById ("acao")
+area.addEventListener("click", clicar)
+area.addEventListener("mouseenter", entrar)
+area.addEventListener("mouseout", sair)
 
-function passar() {
-    var area1 = window.document.getElementById ("enter")
-    area1.innerText = "Entrou"
+function clicar() {
     
+    area.innerText = "Clicou!"
+    area.style.background = "red"
+}
+function entrar() {
+    
+    area.innerText = "Entrou!"
+    
+}
+function sair() {
+    area.innerText = "Saiu!"
+    area.style.background = "green"
 }
