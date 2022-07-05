@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(72, 132, 241);
+    color: white;
+    font: normal 20px arial;
+    text-align: center;
+
+}
+
+header {
+    
+}
+
+
+div {
+    background-color: white;
+    color: black;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+footer {
+    font-style: italic;
+}
