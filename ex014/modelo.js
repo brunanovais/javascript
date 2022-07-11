@@ -11,18 +11,18 @@ function clicar(){
         window.alert("[ERRO] Faltam dados!")
     } else {
         res.innerHTML =("Contando...")
-   for (var c = i; c <= f ; c += p ) {
-      res.innerHTML += ( c )
+        if (f > i) {
+            for (var c = i; c <= f ; c += p ) {
+            res.innerHTML += ( c+ " \u{1F449}" )
+            
+        } 
+        res.innerHTML += "\u{1F3C1}"
+    } else {
+        for (var c = i; c >= f ; c -= p ) {
+            res.innerHTML += ( c+ " \u{1F449}" )
     }
-    }
+    res.innerHTML += "\u{1F3C1}"
+}
+}
 
-
-
-
-
-
-   // while (n <= fim) {
-   //     res.innerHTML = (n)
-  //      n+pas
-   // }
 }
