@@ -1,23 +1,22 @@
 var numbox1 = document.getElementById("numbox")
 var num = Number(numbox1.value) 
-var vetor = [num]
+var vetor = []
 
 function adcionar() {
-    vetor = [num]
     num = Number(numbox1.value) 
-    if (num == "") {
-         window.alert('[ERRO] Digite um numero!')
+    if (num == "" || num < 1 || num > 100) {
+         window.alert('[ERRO] Digite um numero entre 1 e 100!')
     } else {
         var lista = document.getElementById("sel")
         lista.options[lista.options.length] = new Option(+num+ " foi adcionado");
-        vetor.push(num)
+        vetor.push(Number(num.value)) 
     }
-   
+  
 }
 
 function finalizar (){
     num = Number(numbox1.value) 
     var res = document.getElementById("resposta")
-    res.innerText = (vetor.sort())
-    
+    var tam = vetor.length
+    res.innerText = (tam)
 }
