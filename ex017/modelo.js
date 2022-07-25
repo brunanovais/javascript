@@ -5,7 +5,7 @@ var vetor = []
 function adcionar() {
     num = Number(numbox1.value) 
     if (num == "" || num < 1 || num > 100) {
-         window.alert('[ERRO] Digite um numero entre 1 e 100!')
+         window.alert(' Digite um numero entre 1 e 100!')
     } else {
         var lista = document.getElementById("sel")
         lista.options[lista.options.length] = new Option(+num+ " foi adcionado");
